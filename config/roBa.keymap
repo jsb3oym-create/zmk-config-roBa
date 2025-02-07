@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -12,34 +13,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -67,7 +41,7 @@
         default_layer {
             bindings = <
 &mt Q LEFT_ALT      &kp W  &kp E  &kp R        &kp T                                                            &kp Y        &kp U  &kp I      &kp O         &mt P RIGHT_CONTROL
-&mt A LEFT_CONTROL  &kp S  &kp D  &kp F        &kp G             &mkp MB1                    &kp ESCAPE         &kp H        &kp J  &kp K      &kp L         &mt MINUS RIGHT_ALT
+&mt A LEFT_CONTROL  &kp S  &kp D  &kp F        &kp G             &mkp MB1                    &lt 4 ESCAPE       &kp H        &kp J  &kp K      &kp L         &mt MINUS RIGHT_ALT
 &mt LEFT_SHIFT Z    &kp X  &kp C  &kp V        &kp B             &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &lt 4 PERIOD  &mt SLASH RIGHT_SHIFT
 &none               &none  &none  &lt 2 SPACE  &mt LEFT_ALT TAB  &mt LEFT_WIN BACKSPACE      &mt TAB RIGHT_WIN  &lt 1 ENTER                                  &none
             >;
@@ -106,12 +80,12 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        SCROLL {
+        BLE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&none         &none         &none         &none         &none                           &none  &none  &none  &none  &bt BT_CLR_ALL
+&none         &none         &none         &none         &none         &none      &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none      &none  &none  &none  &none  &none  &none
+&trans        &trans        &trans        &bt BT_CLR    &none         &none      &none  &none                       &trans
             >;
         };
     };
