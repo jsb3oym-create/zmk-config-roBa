@@ -51,8 +51,8 @@
         ARROW {
             bindings = <
 &mt LEFT_ALT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                                   &kp NUMBER_6    &kp N7          &kp N8         &kp NUMBER_9        &mt RIGHT_CONTROL N0
-&kp LEFT_CONTROL       &none         &kp DELETE    &kp BACKSPACE  &trans  &trans                   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &mt RIGHT_ALT EQUAL
-&kp LEFT_SHIFT         &none         &none         &none          &none   &none                    &none   &none           &none           &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &mt RIGHT_SHIFT BACKSLASH
+&kp LEFT_CONTROL       &none         &kp DELETE    &kp BACKSPACE  &trans  &kp K_MUTE               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &mt RIGHT_ALT EQUAL
+&kp LEFT_SHIFT         &none         &none         &none          &none   &none                    &none   &none           &tog 2          &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &mt RIGHT_SHIFT BACKSLASH
 &trans                 &trans        &trans        &trans         &trans  &mt LEFT_WIN DELETE      &trans  &trans                                                             &none
             >;
 
@@ -63,7 +63,7 @@
             bindings = <
 &mt LEFT_ALT LS(F1)      &kp F2   &kp F3   &kp F4  &kp F5                                      &mkp MB4    &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &mt RIGHT_CONTROL END
 &mt LEFT_CONTROL LC(F6)  &kp F7   &kp F8   &kp F9  &kp F10  &trans      &trans                 &kp ESCAPE  &mkp MB1     &mkp MB3       &mkp MB2  &kp RIGHT_ALT
-&kp LEFT_SHIFT           &kp F11  &kp F12  &none   &none    &trans      &none                  &mkp MB5    &tog 2       &to 4          &mo 4     &kp RIGHT_SHIFT
+&kp LEFT_SHIFT           &kp F11  &kp F12  &none   &none    &trans      &none                  &mkp MB5    &tog 2       &to 3          &mo 3     &kp RIGHT_SHIFT
 &trans                   &trans   &trans   &trans  &trans   &trans      &mt RIGHT_CONTROL TAB  &trans                                            &trans
             >;
         };
@@ -71,12 +71,10 @@
         MEDIA {
             bindings = <
 &kp LEFT_ALT      &none           &none             &none       &none                       &trans             &trans          &trans           &trans           &kp RIGHT_CONTROL
-&kp LEFT_CONTROL  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none   &trans      &trans  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &kp RIGHT_ALT
+&kp LEFT_CONTROL  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &none   &trans      &trans  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &kp RIGHT_ALT
 &kp LEFT_SHIFT    &none           &none             &none       &none   &none       &none   &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans           &kp RIGHT_SHIFT
 &trans            &trans          &trans            &trans      &trans  &trans      &trans  &trans                                                               &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         BLE {
