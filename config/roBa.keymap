@@ -43,7 +43,7 @@
 &mt Q LEFT_ALT      &kp W  &kp E  &kp R        &kp T                                                            &kp Y        &kp U  &kp I      &kp O         &mt P RIGHT_CONTROL
 &mt A LEFT_CONTROL  &kp S  &kp D  &kp F        &kp G             &mkp MB1                    &lt 4 ESCAPE       &kp H        &kp J  &kp K      &kp L         &mt MINUS RIGHT_ALT
 &mt LEFT_SHIFT Z    &kp X  &kp C  &kp V        &kp B             &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &lt 4 PERIOD  &mt SLASH RIGHT_SHIFT
-&none               &none  &none  &lt 2 SPACE  &mt LEFT_ALT TAB  &mt LEFT_WIN BACKSPACE      &mt TAB RIGHT_WIN  &lt 1 ENTER                                  &none
+&none               &none  &none  &lt 2 SPACE  &mt LEFT_ALT TAB  &mt LEFT_WIN BACKSPACE      &mt RIGHT_WIN TAB  &lt 1 ENTER                                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
