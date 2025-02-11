@@ -50,7 +50,7 @@
         default_layer {
             bindings = <
 &mt LEFT_ALT Q      &kp W  &kp E  &kp R        &kp T                                                            &kp Y        &kp U  &kp I      &kp O         &mt RIGHT_CONTROL P
-&mt LEFT_CONTROL A  &kp S  &kp D  &kp F        &kp G             &mkp MB1                    &lt 4 ESCAPE       &kp H        &kp J  &kp K      &kp L         &mt RIGHT_ALT MINUS
+&mt LEFT_CONTROL A  &kp S  &kp D  &kp F        &kp G             &kp K_MUTE                  &lt 4 ESCAPE       &kp H        &kp J  &kp K      &kp L         &mt RIGHT_ALT MINUS
 &mt LEFT_SHIFT Z    &kp X  &kp C  &kp V        &kp B             &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &lt 3 PERIOD  &mt RIGHT_SHIFT SLASH
 &none               &none  &none  &lt 2 SPACE  &mt LEFT_ALT TAB  &mt LEFT_WIN BACKSPACE      &mt RIGHT_WIN TAB  &lt 1 ENTER                                  &none
             >;
@@ -60,13 +60,13 @@
 
         ARROW {
             bindings = <
-&mt LEFT_ALT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                                   &kp NUMBER_6    &kp N7          &kp N8         &kp NUMBER_9        &mt RIGHT_CONTROL N0
-&kp LEFT_CONTROL       &none         &kp DELETE    &kp BACKSPACE  &trans  &kp K_MUTE               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &mt RIGHT_ALT EQUAL
-&kp LEFT_SHIFT         &none         &none         &none          &none   &none                    &none   &none           &tog 2          &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &mt RIGHT_SHIFT BACKSLASH
-&trans                 &trans        &trans        &trans         &trans  &mt LEFT_WIN DELETE      &trans  &trans                                                             &none
+&mt LEFT_ALT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                                      &kp NUMBER_6    &kp N7          &kp N8         &kp NUMBER_9        &mt RIGHT_CONTROL N0
+&kp LEFT_CONTROL       &none         &kp DELETE    &kp BACKSPACE  &kp GRAVE  &kp K_MUTE               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW     &mt RIGHT_ALT EQUAL
+&kp LEFT_SHIFT         &none         &none         &none          &none      &none                    &none   &none           &tog 2          &kp SEMICOLON  &lt 3 SINGLE_QUOTE  &mt RIGHT_SHIFT BACKSLASH
+&trans                 &trans        &trans        &trans         &trans     &mt LEFT_WIN DELETE      &trans  &trans                                                             &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP2 K_VOLUME_DOWN2>;
         };
 
         FUNCTION {
@@ -85,8 +85,6 @@
 &kp LEFT_SHIFT    &none           &none             &none       &none   &none       &none   &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans           &kp RIGHT_SHIFT
 &trans            &trans          &trans            &trans      &trans  &trans      &trans  &trans                                                               &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp U D>;
         };
 
         BLE {
