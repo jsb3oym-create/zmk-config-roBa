@@ -70,10 +70,10 @@
 
         FUNCTION {
             bindings = <
-&mt LEFT_ALT F1          &kp F2   &kp F3   &kp F4  &kp F5                                      &mkp MB4      &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &mt RIGHT_GUI END
-&mt LEFT_CONTROL LC(F6)  &kp F7   &kp F8   &kp F9  &kp F10  &trans      &trans                 &lt 4 ESCAPE  &mkp MB1     &mkp MB3       &mkp MB2  &kp RIGHT_ALT
-&kp LEFT_SHIFT           &kp F11  &kp F12  &none   &none    &trans      &trans                 &mkp MB5      &tog 2       &to 3          &mo 3     &kp RIGHT_SHIFT
-&trans                   &trans   &trans   &trans  &trans   &trans      &mt RIGHT_CONTROL TAB  &trans                                              &trans
+&mt LEFT_ALT F1      &kp F2   &kp F3   &kp F4  &kp F5                                      &mkp MB4      &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &mt RIGHT_GUI END
+&mt LEFT_CONTROL F6  &kp F7   &kp F8   &kp F9  &kp F10  &trans      &trans                 &lt 4 ESCAPE  &mkp MB1     &mkp MB3       &mkp MB2  &kp RIGHT_ALT
+&kp LEFT_SHIFT       &kp F11  &kp F12  &none   &none    &trans      &trans                 &mkp MB5      &tog 2       &to 3          &mo 3     &kp RIGHT_SHIFT
+&trans               &trans   &trans   &trans  &trans   &trans      &mt RIGHT_CONTROL TAB  &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
